@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Arena – AI in Learning &amp; Research Dossier</title>
+  <style>
+    :root{--bg:#0f1117;--card:#181b24;--accent:#6e6eff;--accent2:#9b6eff;--border:#252836;--text:#d4d4dc;--muted:#8888a0;--heading:#fff}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;padding:0}
+    header{background:linear-gradient(135deg,#1a1c28 0%,#12131c 100%);border-bottom:1px solid var(--border);padding:48px 0 36px;text-align:center}
+    header h1{font-size:28px;color:var(--heading);letter-spacing:1px}
+    header .subtitle{color:var(--muted);font-size:14px;margin-top:8px}
+    header .badge{display:inline-block;margin-top:14px;padding:4px 16px;border-radius:20px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:12px;font-weight:600;letter-spacing:.5px}
+    .container{max-width:900px;margin:0 auto;padding:32px 24px 64px}
+    h2{font-size:22px;color:var(--heading);margin:40px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+    h3{font-size:17px;color:var(--accent);margin:28px 0 10px}
+    h4{font-size:15px;color:var(--heading);margin:18px 0 8px}
+    p{margin-bottom:14px}
+    ul,ol{margin:0 0 16px 22px}
+    li{margin-bottom:6px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px 28px;margin-bottom:22px}
+    .card-title{font-size:15px;font-weight:700;color:var(--heading);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+    .card-title .num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:12px;font-weight:700;flex-shrink:0}
+    .label{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700;padding:3px 10px;border-radius:6px;margin-bottom:8px}
+    .label-cite{background:#1a2636;color:#5ba8ff}
+    .label-summary{background:#1a2832;color:#40c4aa}
+    .label-data{background:#2a1f36;color:#b48eff}
+    .label-arg{background:#2c1a1a;color:#ff7a7a}
+    .provocation{background:linear-gradient(135deg,#1c1e2e,#1a1628);border:1px solid #2e2a44;border-radius:12px;padding:24px 28px;margin-bottom:18px;position:relative}
+    .provocation::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--accent),var(--accent2));border-radius:4px 0 0 4px}
+    .provocation .tag{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent);font-weight:700;margin-bottom:8px}
+    .provocation blockquote{font-size:15px;color:#c8c8e0;font-style:italic;border:none;padding:0;margin:0 0 10px}
+    .provocation .rationale{font-size:13px;color:var(--muted)}
+    .scope-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+    .scope-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px}
+    .scope-item h4{margin-top:0;color:var(--heading);font-size:14px}
+    .scope-item ul{margin:8px 0 0 18px;font-size:13px}
+    .scope-item li{color:var(--muted)}
+    .toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 28px;margin:24px 0}
+    .toc h3{margin-top:0;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+    .toc ol{margin:10px 0 0 20px}
+    .toc li{margin-bottom:4px}
+    .toc a{color:var(--accent);text-decoration:none;font-size:14px}
+    .toc a:hover{text-decoration:underline}
+    @media(max-width:700px){.scope-grid{grid-template-columns:1fr}.container{padding:20px 14px}}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Evidence Arena Dossier</h1>
+  <p class="subtitle">Topic &mdash; Using AI for Learning and Research</p>
+  <span class="badge">Pre-Session Preparation</span>
+</header>
+
+<div class="container">
+
+  <!-- TABLE OF CONTENTS -->
+  <nav class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#scope">Phase 1 &mdash; Research Scoping</a></li>
+      <li><a href="#provocations">Discussion Provocations</a></li>
+      <li><a href="#evidence">Evidence Bank (8 Sources)</a></li>
+    </ol>
+  </nav>
+
+  <!-- =========================================================
+       SECTION 1 – RESEARCH SCOPING
+       ========================================================= -->
+  <h2 id="scope">1. Research Scoping</h2>
+
+  <p>Artificial intelligence is reshaping both <strong>how students learn</strong> and <strong>how researchers produce knowledge</strong>. The scoping below maps the key impact areas identified in current literature.</p>
+
+  <div class="scope-grid">
+    <div class="scope-item">
+      <h4>AI in Learning</h4>
+      <ul>
+        <li><strong>Personalised Tutoring</strong> &mdash; Adaptive platforms (e.g., intelligent tutoring systems, LLM-based chatbots) tailor feedback, pacing, and content to individual learners, showing measurable gains in formative assessment contexts.</li>
+        <li><strong>Accessibility</strong> &mdash; Real-time captioning, text-to-speech, language translation, and assistive summarisation tools lower barriers for students with disabilities and non-native speakers.</li>
+        <li><strong>Skill Acquisition vs. Skill Atrophy</strong> &mdash; Growing concern that over-reliance on generative AI for coding, writing, and data visualisation may erode foundational competencies students need to critically evaluate outputs.</li>
+        <li><strong>Academic Integrity</strong> &mdash; Generative text tools challenge traditional assessment design; institutions are revising policies and exploring AI-detection tools, though detection accuracy remains contested.</li>
+      </ul>
+    </div>
+    <div class="scope-item">
+      <h4>AI in Research</h4>
+      <ul>
+        <li><strong>Data Analysis &amp; Discovery</strong> &mdash; ML models accelerate pattern recognition across large datasets (genomics, climate science, social-media corpora), enabling research at scales impossible manually.</li>
+        <li><strong>Automated Literature Review</strong> &mdash; Tools like Elicit, Semantic Scholar, and Consensus use LLMs to surface, summarise, and synthesise papers, but risk algorithmic bias in paper selection.</li>
+        <li><strong>AI-Assisted Writing</strong> &mdash; LLMs are used for drafting, paraphrasing, and translation, raising questions about authorship, transparency, and the integrity of the scholarly voice.</li>
+        <li><strong>Ethics &amp; Governance</strong> &mdash; Issues include data privacy, reproducibility of AI-assisted findings, consent for training-data use, and responsible-use frameworks issued by funding bodies and publishers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Cross-Cutting Tensions</h3>
+  <ul>
+    <li><strong>Efficiency vs. Understanding:</strong> AI accelerates outputs but may decouple the researcher/learner from the process that builds deep expertise.</li>
+    <li><strong>Democratisation vs. Dependency:</strong> AI lowers the barrier to entry for research and learning, yet creates dependency on opaque proprietary systems.</li>
+    <li><strong>Innovation vs. Regulation:</strong> The pace of AI capability outstrips institutional policy; universities and publishers are still formulating guidelines.</li>
+  </ul>
+
+  <!-- =========================================================
+       SECTION 2 – DISCUSSION PROVOCATIONS
+       ========================================================= -->
+  <h2 id="provocations">2. Discussion Provocations</h2>
+
+  <div class="provocation">
+    <div class="tag">Provocation 1 &mdash; The Epistemic Outsourcing Dilemma</div>
+    <blockquote>
+      "If a postgraduate student uses an AI tool to identify, screen, and synthesise sources for a systematic review and the AI halluccinates a citation or silently omits a contradictory study, has the student actually conducted a review&mdash;or merely approved one? At what point does 'AI-assisted research' become 'AI-conducted, human-rubber-stamped research', and should the distinction matter for how we award degrees?"
+    </blockquote>
+    <p class="rationale"><strong>Why it&rsquo;s tough:</strong> This provocation forces both sides to define the <em>minimum cognitive contribution</em> a human must make for work to count as their own. Defenders of AI will argue the student still exercises judgement in interpreting results; critics will argue that if the student cannot independently reproduce the search logic, the epistemic labour has been outsourced. It connects to evidence on algorithmic bias in literature-review tools (Sources 3, 5, 8 in the Evidence Bank) and UNESCO&rsquo;s call for human-centred AI governance (Source 2).</p>
+  </div>
+
+  <div class="provocation">
+    <div class="tag">Provocation 2 &mdash; The Deskilling Paradox</div>
+    <blockquote>
+      "Large Language Models can now generate statistically sound Python code, produce publication-ready data visualisations, and draft methodology sections. If the output is correct, does it matter that the student cannot do it manually? Should universities redesign curricula to teach 'AI orchestration' instead of foundational programming and statistics, or does that create a generation of researchers who can operate tools they fundamentally do not understand?"
+    </blockquote>
+    <p class="rationale"><strong>Why it&rsquo;s tough:</strong> Both positions have strong evidence. Proponents of curricular reform point to efficiency gains and the precedent of calculators replacing long division. Opponents cite research on the <em>generation effect</em> in learning science&mdash;that actively producing knowledge (rather than passively reviewing AI output) is essential for deep understanding. The provocation connects directly to evidence on skill atrophy (Sources 1, 4, 6) and Chain-of-Thought prompting reliability (Source 7).</p>
+  </div>
+
+  <!-- =========================================================
+       SECTION 3 – EVIDENCE BANK
+       ========================================================= -->
+  <h2 id="evidence">3. Evidence Bank</h2>
+  <p>Eight high-quality sources drawn from peer-reviewed journals, international policy reports, and landmark technical papers. Each entry provides citation, summary, data points, and a ready-made argument line.</p>
+
+  <!-- SOURCE 1 -->
+  <div class="card">
+    <div class="card-title"><span class="num">1</span> AI &amp; Higher Education &mdash; Systematic Review</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Zawacki-Richter, O., Mar&iacute;n, V.I., Bond, M. and Gouverneur, F. (2019) &lsquo;Systematic review of research on artificial intelligence applications in higher education &ndash; where are the educators?&rsquo;, <em>International Journal of Educational Technology in Higher Education</em>, 16(1), article 39. doi:10.1186/s41239-019-0171-0.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>This systematic review analysed 146 peer-reviewed articles on AI in higher education published between 2007 and 2018. It found that the majority of studies focus on adaptive and personalised learning systems, while significantly fewer address institutional or ethical dimensions. The authors noted a striking absence of educator perspectives in the design and evaluation of AI tools, with most research driven by computer-science departments rather than education faculties.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>Of the 146 studies reviewed, the largest cluster (roughly 40%) concerned <strong>intelligent tutoring systems and adaptive learning</strong>.</li>
+      <li>Only a small minority of studies (&lt; 10%) examined the <strong>ethical implications</strong> of AI in education or involved educators as co-designers.</li>
+      <li>There was a marked geographic concentration: the majority of studies originated from the <strong>United States and China</strong>, raising questions about generalisability.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Supports caution:</strong> If the research base underpinning AI-in-education tools was built with minimal input from educators and limited ethical scrutiny, universities adopting these tools are making curricular decisions on an incomplete evidence base&mdash;a fact that should temper enthusiasm for rapid AI integration.</p>
+  </div>
+
+  <!-- SOURCE 2 -->
+  <div class="card">
+    <div class="card-title"><span class="num">2</span> UNESCO Guidance on Generative AI</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>UNESCO (2023) <em>Guidance for generative AI in education and research</em>. Paris: United Nations Educational, Scientific and Cultural Organization. ISBN 978-92-3-100612-8.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>This landmark policy document is the first global guidance framework from an intergovernmental body specifically addressing generative AI in education and research. It proposes a human-centred approach, emphasising that AI should augment rather than replace human agency. The guidance outlines steps governments and institutions should take, including regulating data use, protecting learner privacy, validating AI outputs, and ensuring that AI does not widen existing inequalities.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>UNESCO recommends that <strong>no generative-AI tool should be used with learners under the age of 13</strong>, and use between 13&ndash;18 should be closely supervised.</li>
+      <li>The report stresses that fewer than <strong>10% of schools and universities globally</strong> had formal guidance on AI use at the time of publication.</li>
+      <li>It explicitly calls for <strong>AI literacy as a new foundational competency</strong> in national curricula, alongside reading, writing, and numeracy.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Supports regulated adoption:</strong> UNESCO&rsquo;s framework validates the use of AI in education <em>only</em> when safeguards (transparency, human oversight, equity audits) are in place. This makes a powerful evidence-based rebuttal to both uncritical adoption <em>and</em> outright prohibition.</p>
+  </div>
+
+  <!-- SOURCE 3 -->
+  <div class="card">
+    <div class="card-title"><span class="num">3</span> ChatGPT for Good? Opportunities &amp; Challenges in Education</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Kasneci, E., Se&szlig;ler, K., K&uuml;chemann, S., Bannert, M., Dementieva, D., Fischer, F., Gasser, U., Groh, G., G&uuml;nnemann, S., H&uuml;llermeier, E., Krusche, S., Kutyniok, G., Michaeli, T., Nerdel, C., Pfeffer, J., Poquet, O., Saber, M., Schmidt, A., Seidel, T., Stadler, M., Weller, J., Kuhn, J. and Kasneci, G. (2023) &lsquo;ChatGPT for good? On opportunities and challenges of large language models for education&rsquo;, <em>Learning and Individual Differences</em>, 103, article 102274. doi:10.1016/j.lindif.2023.102274.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>A multidisciplinary team of 23 researchers evaluated the potential of ChatGPT and similar LLMs across various educational contexts. The paper identifies opportunities such as personalised feedback, scaffolded problem-solving, and language-learning support, while raising challenges including factual inaccuracy (hallucination), plagiarism concerns, potential for reinforcing biases in training data, and the risk of undermining critical-thinking development if students accept AI outputs uncritically.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>The authors highlight that LLMs can generate <strong>plausible but factually incorrect answers</strong> (hallucinations) with high confidence, creating a particular danger in educational settings where students may lack domain expertise to detect errors.</li>
+      <li>They identify <strong>bias amplification</strong> as a structural risk: LLMs trained on skewed corpora may perpetuate stereotypes or present culturally narrow perspectives as universal knowledge.</li>
+      <li>The paper advocates for <strong>&ldquo;AI literacy&rdquo; training</strong> as a prerequisite to productive educational use, arguing that without it, students become passive consumers of AI output.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Challenges uncritical adoption:</strong> Even proponents concede that the hallucination problem is not solved; deploying LLMs in education without concurrent AI-literacy training risks entrenching misinformation dressed in articulate prose&mdash;a &ldquo;fluency trap.&rdquo;</p>
+  </div>
+
+  <!-- SOURCE 4 -->
+  <div class="card">
+    <div class="card-title"><span class="num">4</span> Using AI to Implement Effective Teaching Strategies</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Mollick, E.R. and Mollick, L. (2023) &lsquo;Using AI to implement effective teaching strategies in classrooms: five strategies, including prompts&rsquo;, <em>SSRN Working Paper</em>. doi:10.2139/ssrn.4391243.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>Based on experiments at the Wharton School, this paper demonstrates five evidence-based pedagogical strategies (low-stakes testing, distributed practice, interleaving, feedback-driven metacognition, and worked examples) that can be effectively implemented using LLMs as classroom copilots. The authors provide concrete, tested prompts and argue that when AI is aligned with established learning science, it enhances rather than replaces the instructor&rsquo;s role. However, they caution that poorly designed prompts can produce generic or misleading feedback.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>The five strategies implemented map directly onto techniques shown in <strong>meta-analyses to have effect sizes of 0.4&ndash;0.8</strong> on student learning outcomes (referencing Dunlosky et al., 2013).</li>
+      <li>The authors found that <strong>prompt engineering quality</strong> was the single largest variable in whether AI output was pedagogically useful or harmful.</li>
+      <li>Students engaging with AI-assisted <strong>retrieval practice scored higher on subsequent assessments</strong> compared to students using passive review methods alone, in classroom pilots.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Supports strategic adoption:</strong> AI is most powerful when deployed as a delivery mechanism for <em>already-proven</em> pedagogical techniques. This reframes the debate: the question is not &ldquo;should we use AI?&rdquo; but &ldquo;are we using it to implement strategies that learning science has already validated?&rdquo;</p>
+  </div>
+
+  <!-- SOURCE 5 -->
+  <div class="card">
+    <div class="card-title"><span class="num">5</span> On the Dangers of Stochastic Parrots</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Bender, E.M., Gebru, T., McMillan-Major, A. and Shmitchell, S. (2021) &lsquo;On the dangers of stochastic parrots: can language models be too big? &#x1F99C;&rsquo;, in <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT &rsquo;21)</em>. New York: ACM, pp. 610&ndash;623. doi:10.1145/3442188.3445922.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>This widely cited and contested paper argues that ever-larger language models carry significant risks: environmental costs of training, encoding of hegemonic worldviews from biased training data, and generation of fluent text that creates an &ldquo;illusion of meaning&rdquo; without genuine understanding. The authors warn that users&mdash;including researchers and students&mdash;anthropomorphise coherent outputs, mistaking statistical pattern-matching for reasoning, which is especially dangerous in research contexts where authoritative-sounding text may go unverified.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>The paper introduced the influential metaphor of LLMs as <strong>&ldquo;stochastic parrots&rdquo;</strong>&mdash;systems that recombine patterns from training data without understanding, a framing now widely cited in AI-ethics discourse.</li>
+      <li>The authors documented that training corpora over-represent <strong>English-language, Western, and male-authored sources</strong>, meaning outputs encode systematic biases that can distort research findings.</li>
+      <li>They raised the concern of <strong>&ldquo;value lock&rdquo;</strong>: once a large model is trained and widely deployed, the biases in its training data become structurally difficult to correct, affecting every downstream application.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Challenges AI reliability in research:</strong> If LLMs are stochastic parrots rather than reasoning engines, then using them for literature synthesis or data interpretation in research introduces a structural risk of bias and hallucination that no amount of prompt engineering can fully eliminate&mdash;only human domain expertise can serve as the verification layer.</p>
+  </div>
+
+  <!-- SOURCE 6 -->
+  <div class="card">
+    <div class="card-title"><span class="num">6</span> Academic Integrity in the Era of ChatGPT</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Cotton, D.R.E., Cotton, P.A. and Shipway, J.R. (2024) &lsquo;Chatting and cheating: ensuring academic integrity in the era of ChatGPT&rsquo;, <em>Innovations in Education and Teaching International</em>, 61(2), pp. 228&ndash;239. doi:10.1080/14703297.2023.2190148.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>This paper examines the threats that generative AI poses to academic integrity and evaluates institutional responses. The authors argue that AI-detection tools are unreliable (with high false-positive rates, disproportionately flagging non-native English speakers), and that the real solution is assessment redesign rather than policing. They propose a shift toward process-based assessment (oral defences, reflective portfolios, in-class demonstrations) that verifies understanding rather than product.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>AI-text detectors tested in the study showed <strong>false-positive rates as high as 20&ndash;30%</strong> for non-native English speakers, raising significant equity concerns.</li>
+      <li>The authors found that <strong>traditional essay-based assessment</strong> is the format most vulnerable to AI substitution, while viva-voce examinations and iterative portfolio assessments are substantially more resistant.</li>
+      <li>They note that <strong>institutional policies are lagging</strong>: at the time of writing, the majority of UK universities had not yet issued formal guidance on student use of generative AI.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Supports assessment reform over prohibition:</strong> Trying to &ldquo;catch&rdquo; AI use is both technically unreliable and ethically problematic. The evidence points toward redesigning assessment to test understanding directly, making the question of whether AI was used in preparation irrelevant.</p>
+  </div>
+
+  <!-- SOURCE 7 -->
+  <div class="card">
+    <div class="card-title"><span class="num">7</span> Chain-of-Thought Prompting &amp; AI Reasoning</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. and Zhou, D. (2022) &lsquo;Chain-of-thought prompting elicits reasoning in large language models&rsquo;, in <em>Advances in Neural Information Processing Systems (NeurIPS 2022)</em>, 35, pp. 24824&ndash;24837.</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>This landmark Google Brain paper demonstrated that prompting LLMs to produce intermediate reasoning steps (&ldquo;Let&rsquo;s think step by step&rdquo;) substantially improves performance on arithmetic, commonsense, and symbolic reasoning benchmarks. The technique, known as Chain-of-Thought (CoT) prompting, became one of the most widely adopted prompting strategies. However, subsequent research has shown that CoT can also produce plausible-sounding but incorrect reasoning chains, giving users false confidence in wrong answers.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>CoT prompting improved accuracy on the <strong>GSM8K math benchmark from ~18% to ~57%</strong> with a 540-billion-parameter model (PaLM), a tripling of performance.</li>
+      <li>The gains were <strong>scale-dependent</strong>: CoT had negligible effect on models with fewer than ~100 billion parameters, suggesting the technique relies on emergent properties of very large models.</li>
+      <li>Critically, the reasoning chains are <strong>not guaranteed to be faithful</strong> to the model&rsquo;s internal computation&mdash;a step-by-step explanation may read correctly while the conclusion is wrong, creating an &ldquo;illusion of rigour.&rdquo;</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Challenges trust in AI reasoning:</strong> In a research context, CoT prompting may be particularly dangerous precisely <em>because</em> it feels rigorous. A researcher who sees a step-by-step derivation is more likely to trust the output than one who sees a bare assertion&mdash;yet the steps may be confabulated. This means CoT may increase user trust faster than it increases accuracy.</p>
+  </div>
+
+  <!-- SOURCE 8 -->
+  <div class="card">
+    <div class="card-title"><span class="num">8</span> The Russell Group Principles on Generative AI</div>
+
+    <span class="label label-cite">Citation</span>
+    <p>Russell Group (2023) <em>New principles on the use of generative AI in education</em>. London: Russell Group. Available at: <span style="color:var(--accent)">russellgroup.ac.uk/news/new-principles-on-the-use-of-generative-ai-in-education/</span> (Accessed: 2024).</p>
+
+    <span class="label label-summary">Summary</span>
+    <p>The Russell Group&mdash;representing 24 leading UK research universities including Oxford, Cambridge, UCL, and Imperial College London&mdash;published a set of guiding principles for how member institutions should approach generative AI. The principles reject outright bans in favour of supported integration, emphasising that students and staff alike need training in responsible use, that academic integrity frameworks must be updated, and that AI should be embedded in ways that uphold educational standards rather than bypassing them.</p>
+
+    <span class="label label-data">Data Points</span>
+    <ul>
+      <li>The principles state that universities should <strong>&ldquo;support students and staff to become AI-literate&rdquo;</strong> and explicitly frame AI literacy as a graduate-level competency.</li>
+      <li>They acknowledge that <strong>AI tools are already widely used by students</strong> and that policies of prohibition are both impractical and counterproductive.</li>
+      <li>The framework calls for <strong>transparency</strong>: students should be required to declare if and how they have used AI in their work, rather than being punished for use per se.</li>
+    </ul>
+
+    <span class="label label-arg">Argument Line</span>
+    <p><strong>Supports institutional integration:</strong> When 24 of the UK&rsquo;s top research universities collectively endorse guided AI use rather than prohibition, it shifts the burden of proof: opponents of AI in education must now explain why an outright ban is more prudent than the regulated approach advocated by leading institutions.</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:12px">
+    <p>Evidence Arena Dossier &mdash; Compiled for pre-session preparation</p>
+    <p>Topic: Using AI for Learning and Research</p>
+  </div>
+
+</div>
+</body>
+</html>
